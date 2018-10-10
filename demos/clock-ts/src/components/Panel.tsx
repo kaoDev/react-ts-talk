@@ -1,0 +1,38 @@
+import * as React from "react";
+import * as PropTypes from "prop-types";
+
+const Panel = (props: { dateOn: boolean; toggleDate: () => void }) => {
+  return (
+    <div className="container">
+      <div className="d-flex flex-row">
+        <div className="col-md-4 mx-auto">
+          <div className="panel">
+            <label id="date-switch" className="switch">
+              <input
+                type="checkbox"
+                checked={props.dateOn}
+                onChange={props.toggleDate}
+              />
+              <span className="slider round" />
+            </label>
+            <label className="panel-switch-text" htmlFor="date-switch">
+              <i className="fa fa-calendar" />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+Panel.defaultProps = {
+  dateOn: true,
+  toggleDate: () => {}
+};
+
+Panel.propTypes = {
+  dateOn: PropTypes.bool,
+  toggleDate: PropTypes.func
+};
+
+export default Panel;
