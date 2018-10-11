@@ -10,13 +10,14 @@ const light = "rgb(225, 225, 225)"
 const dark = "rgb(53,53,53)"
 const accent01 = "rgb(0, 115, 209)"
 const accent02 = "rgb(229, 195, 9)"
+const accent03 = "rgb(229, 100, 9)"
 
 const lightTheme = [
   {
     primary: light,
     secondary: dark,
     tertiary: accent01,
-    quarternary: accent02
+    quarternary: accent03
   },
   {
     primary: {

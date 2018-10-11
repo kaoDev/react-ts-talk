@@ -8,7 +8,13 @@ import {
   BlockQuote,
   Image
 } from "spectacle"
-
+const notes = `
+$ tsc --init
+<br>
+rename files to *.ts / *.tsx
+<br>
+npx create-react-app my-app --scripts-version=react-scripts-ts
+`
 export default (
   <Slide>
     <Heading size={3} caps lineHeight={1} textColor="tertiary">

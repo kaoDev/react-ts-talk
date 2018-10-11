@@ -1,8 +1,16 @@
 import * as React from "react"
 import { Text, Heading, Slide, Appear, Cite, BlockQuote } from "spectacle"
-
+const notes = `
+the language tries to stay as close as possible to the javascript language
+<br>
+all js code is valid ts code
+<br>
+large community
+<br>
+pragmatic philosophy
+`
 export default (
-  <Slide>
+  <Slide notes={notes}>
     <Heading size={3} fit caps lineHeight={1} textColor="tertiary">
       more on the what part
     </Heading>

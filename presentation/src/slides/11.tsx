@@ -6,11 +6,18 @@ import {
   Appear,
   Cite,
   BlockQuote,
-  Image
+  Image,
+  
 } from "spectacle"
 
+const notes = `
+//@ts-check
+</br>
+$ npm i -D typescript
+`
+
 export default (
-  <Slide>
+  <Slide notes={notes} >
     <Heading size={3} caps lineHeight={1} textColor="tertiary">
       TypeScript in JS
     </Heading>

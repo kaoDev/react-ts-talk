@@ -1,6 +1,13 @@
 import * as React from "react"
 import { Text, Heading, Slide, Appear, Cite, Quote, Image } from "spectacle"
 
+const notes = `
+tsconfig has a LOT of settings
+<br>
+don't compile with an unused variable
+<br>
+choose your own adventure
+`
 export default (
   <Slide>
     <Heading size={3} caps lineHeight={1} textColor="tertiary">

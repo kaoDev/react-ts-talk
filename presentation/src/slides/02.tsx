@@ -26,8 +26,12 @@ const RelativeText = styled(Text)({
   position: "relative"
 })
 
+const notes = `
+we are hiring
+`
+
 export default (
-  <Slide transition={["fade"]} bgColor="quarternary">
+  <Slide notes={notes} transition={["fade"]} bgColor="quarternary">
     <Heading>Hi</Heading>
     <Text textColor="primary" textSize="32px">
       I'm Kalle, Software developer from Kiel
